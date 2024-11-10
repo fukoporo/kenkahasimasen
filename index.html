@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲイみくじ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ゲイみくじ</h1>
+
+    <form id="userForm">
+        <label for="name">名前:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="gender">性別:</label>
+        <select id="gender" name="gender">
+            <option value="gay">ゲイ</option>
+            <option value="mettyagay">めっちゃゲイ</option>
+            <option value="gay like aho">あほほどゲイ</option>
+            <option value="tin gay">ゲイのチンゲ、チンゲイ</option>
+            <option value="gay king">もんげーゲイ略してモンゲイ</option>
+            <option value="best gay">野澤</option>
+        </select><br><br>
+
+        <button type="submit">おみくじを引く</button>
+    </form>
+
+    <div id="omikujiSection" style="display:none;">
+        <h2>おみくじを選んでください</h2>
+        <div id="omikujiCards">
+        </div>
+    </div>
+
+    <div id="resultSection" style="display:none;">
+        <h2>結果</h2>
+        <p id="resultText"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
